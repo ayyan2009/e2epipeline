@@ -4,7 +4,6 @@ pipeline {
   stages {  
     stage('Image build') {
       steps {
-        sh 'git clone https://github.com/ayyan2009/e2epipeline.git'
         sh 'docker image build -t docker.io/sahera1987143/gensysrepo:apach2v1 .'
         }
       }
