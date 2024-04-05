@@ -16,7 +16,7 @@ pipeline {
 
     stage('deploy') {
       steps {
-        sh 'docker run --name gensys -d -P docker.io/sahera1987143/gensysrepo:apach2v1.'
+        sh 'docker run --name gensys -d -P docker.io/sahera1987143/gensysrepo:apach2v1'
       }
     }
 }
