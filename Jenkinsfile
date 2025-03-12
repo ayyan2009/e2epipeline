@@ -10,8 +10,10 @@ pipeline {
     
     stage('image push') {
       steps {
+        withDockerRegistry(credentialsId: 'dockerhub', url: '') {
         sh 'docker push docker.io/sahera1987143/gensysrepo1:apach2v1'
       }
+    }
     }
 
     stage('deploy') {
